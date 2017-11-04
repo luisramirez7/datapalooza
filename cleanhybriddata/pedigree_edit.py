@@ -16,5 +16,8 @@ for index, row in pedigree.iterrows():
 		second_allele.append(alleles[1])
 
 new_split_data = pd.DataFrame({'FIRST': first_allele, 'SECOND': second_allele})
-
-print(new_split_data)
+numrows = len(first_allele)
+with open('luis_output.txt', 'w') as output:
+	output.write('First Allele, Second Allele\n')
+	for x in range(numrows):
+		output.write('{},{}\n'.format(first_allele[x],second_allele[x]))
