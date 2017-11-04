@@ -14,9 +14,6 @@ for index, row in pedigree.iterrows():
 		alleles = row['Pedigree'].split('/')
 		first_allele.append(alleles[0])
 		second_allele.append(alleles[1])
-	else: 
-		first_allele.append(row['Pedigree'])
-		second_allele.append('NONE')
 
 new_split_data = pd.DataFrame({'FIRST': first_allele, 'SECOND': second_allele})
 
