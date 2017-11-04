@@ -20,3 +20,4 @@ for index, row in pedigree.iterrows():
 
 new_split_data = pd.DataFrame({'FIRST': first_allele, 'SECOND': second_allele})
 
+print(new_split_data)
