@@ -24,7 +24,7 @@ df = pd.read_csv(f)
 
 col1 = 'First Allele'
 col2 = ' Second Allele'
-index = 0 #set to first allele, with second allele to the left
+index = 0 #set to first allele, with second allele to the right
 file_name = 'duplicateddata.csv' #results data
 
 result = append_data(df,col1,col2,index)
