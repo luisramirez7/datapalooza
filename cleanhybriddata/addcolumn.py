@@ -7,7 +7,7 @@ from datetime import datetime
 
 date_format = "%m/%d/%y"
 
-f = open('rawdata.csv', 'r')
+f = open('clean_fix_with_allele_structure.csv', 'r')
 df = pd.read_csv(f)
 
 startdate = df['Date Planted'].tolist()
