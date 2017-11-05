@@ -19,13 +19,13 @@ def append_data(df,col1,col2,index):
 	df = df.append(copy, ignore_index=True)
 	return df
 
-f = open('cleanhybriddata/hybriddataset.csv', 'r')
+f = open('slimdata.csv', 'r')
 df = pd.read_csv(f)
 
 col1 = 'First Allele'
 col2 = ' Second Allele'
-index = 21
-file_name = 'duplicateddata.csv'
+index = 0 #set to first allele, with second allele to the left
+file_name = 'duplicateddata.csv' #results data
 
 result = append_data(df,col1,col2,index)
 
